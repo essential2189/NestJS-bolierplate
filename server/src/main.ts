@@ -9,8 +9,8 @@ import { AppModule } from "./app.module";
 
 function swagger(app: NestExpressApplication) {
   const swaggerDocumentBuilder = new DocumentBuilder()
-    .setTitle("Fitory's API Docs")
-    .setDescription("Fitory API description")
+    .setTitle("NestJS boilerplate")
+    .setDescription("NestJS boilerplate")
     .setVersion("1.0")
     .build();
   const swaggerDocument = SwaggerModule.createDocument(app, swaggerDocumentBuilder);
@@ -41,6 +41,7 @@ async function bootstrap() {
   swagger(app);
 
   await app.listen(PORT as string);
+  console.log(`server listen on ${PORT}`);
 }
 
 bootstrap();

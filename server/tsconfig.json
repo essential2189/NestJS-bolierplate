@@ -37,6 +37,7 @@
       "@utils/*": ["src/utils/*"],
       "@converter/*": ["src/converter/*"],
       "@user/*": ["src/domain/user/*"],
+      "@redis/*": ["src/domain/redis/*"]
     },
     "esModuleInterop": true, // 모든 import에 대한  CommonJS와 ES 모듈 간의 상호 운용성을 설정
 
