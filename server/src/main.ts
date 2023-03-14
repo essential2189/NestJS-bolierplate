@@ -9,8 +9,8 @@ import { AppModule } from "./app.module";
 
 function swagger(app: NestExpressApplication) {
   const swaggerDocumentBuilder = new DocumentBuilder()
-    .setTitle("Fitory's API Docs")
-    .setDescription("Fitory API description")
+    .setTitle("NestJS boilerplate API Docs")
+    .setDescription("NestJS boilerplate API description")
     .setVersion("1.0")
     .build();
   const swaggerDocument = SwaggerModule.createDocument(app, swaggerDocumentBuilder);
